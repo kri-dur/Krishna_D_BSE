@@ -15,7 +15,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 ![Headstone Image](logo.svg)
   
-# Final Milestone
+<!--- # Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -51,17 +51,17 @@ For your first milestone, describe what your project is and how you plan to buil
 - An explanation about the different components of your project and how they will all integrate together
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+- What your plan is to complete your project-->
 
 # Starter Project
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!--- **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.** -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-My starter project was a digital clock with an alarm. Using a microcontroller and a crystal, the clock tracks time. Using two buttons at K1 and K2, you can change the hour and minute of the time on the display and set an alarm. I faced a few challenges with soldering and indentifying types of resistors, but using an online calculator I was able to see the ohms.
+My starter project was a digital clock with an alarm. Using a microcontroller and a crystal, the clock tracks time. Using two buttons at K1 and K2, you can change the hour and minute of the time on the display and set an alarm. Everytime you press a button or an alarm is set off, the buttons send a signal to the microcontroller which uses the triode to send an audio signal to the buzzer, which converts it to sound waves. This means everytime you press a button, change the time, or an alarm goes off,beeps are played. The simple components, like resistors and capacitors, help to manage the signals and voltage of the circuit. The device is powered by two AA batteries held on a stand on the back, but it can also use a DC to USB cable using the DC port. 
 
-# Schematics 
+<!---# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
@@ -96,4 +96,4 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
-To watch the BSE tutorial on how to create a portfolio, click here.
+To watch the BSE tutorial on how to create a portfolio, click here.-->
