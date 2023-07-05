@@ -57,7 +57,7 @@ For your first milestone, describe what your project is and how you plan to buil
 
 <!--- **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.** -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CaBMmpWIf28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 My starter project was a digital clock with an alarm. Using a microcontroller and a crystal, the clock tracks time. Using two buttons at K1 and K2, you can change the hour and minute of the time on the display and set an alarm. Everytime you press a button or an alarm is set off, the buttons send a signal to the microcontroller which uses the triode to send an audio signal to the buzzer, which converts it to sound waves. This means everytime you press a button, change the time, or an alarm goes off,beeps are played. The simple components, like resistors and capacitors, help to manage the signals and voltage of the circuit. The device is powered by two AA batteries held on a stand on the back, but it can also use a DC to USB cable using the DC port. 
 
