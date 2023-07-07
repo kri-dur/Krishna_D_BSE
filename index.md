@@ -1,4 +1,4 @@
-# Digital Clock
+# Phone-Controlled Robot Arm
 <!--Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -38,11 +38,11 @@ For your second milestone, explain what you've worked on since your previous mil
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
+- What needs to be completed before your final milestone-->
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -50,11 +50,24 @@ For your first milestone, describe what your project is and how you plan to buil
 - An explanation about the different components of your project and how they will all integrate together
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project-->
+- What your plan is to complete your project
+## Summary
+My intensive project is the phone-controlled robot arm. Using a wired controller with thumbsticks, the user can control the robot to move forward, backward, right, and left to grab objects with its expanding claws. 
+### Components Used
+- Arduino Nano: Stores the code that controls the arm and utilizes pins to connect and manage different components
+- Servo 1(MG90): Rotates left and right to move the entire robot around at the base
+- Servos 2, 3, 4(SG90): Rotate left and right to control the joints and claws of the arm
+- Joysticks: Uses left, right, top, and bottom movements of the thumbstick to controll the arm's movements
+- Turntable: Small metal balls between two plates allow it to rotate 360 degrees at the base
+- 9V battery & clip: Powers the Arduino
+- Wooden cutouts: Make up the physical parts needed for the arm; the claws, the joints, the base
+When you plug the battery clip into the 9V, the robot powers up and the Arduino lights up. The user hold the wired controller and moves the thumbsticks in specific gestures to control the arm. For the left joystick, up moves the arm forward, right moves the based counter-clockwise, down moves the arm backward, and left moves the base clockwise. With Servo 1 screwed into the wooden base and turntable, it allows the rest of the components above it to move left and right with the servo movement. Servo 2 allows for forward and backward movements, since its fixed to the wooden arm. For the right joystick, up closes the claw, down expands the claw, left starts recording an action, and right peforms the recorded action. Servo 4, at the top of the arm, moves one of the claws. Geared against the other claw, both claws move in opposite directions simultaneously. Each time a joystick has input, the Arduino uses its uploaded code to match it to a function and transmit an electronic signal to the servos, which move.
+## Challenges Faced
+The components of the project depend mostly on screws and stacked in an upward position, meaning although the initial installation is easy, fixing any past errors means disassembling multiple components below it. Another challenge I faced was initially using the servos; I realized you need to adjust servos 90 degrees before installation.
+## Next Steps 
+Coding the Android app for the arm and creating custom functions for Servo 3 in the Arduino code.
 
 # Starter Project
-
-<!--- **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.** -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaBMmpWIf28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
