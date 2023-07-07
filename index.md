@@ -1,21 +1,20 @@
 # Digital Clock
 <!--Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:-->
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
+You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
+
+This is an HTML comment in Markdown 
+Anything between these symbols will not render on the published site-->
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Krishna D. | American High | Software Engineering/Design | Rising Sophomore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+<!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](logo.svg)
   
-<!--- # Final Milestone
+# Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -59,7 +58,23 @@ For your first milestone, describe what your project is and how you plan to buil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaBMmpWIf28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-My starter project was a digital clock with an alarm. Using a microcontroller and a crystal, the clock tracks time. Using two buttons at K1 and K2, you can change the hour and minute of the time on the display and set an alarm. Everytime you press a button or an alarm is set off, the buttons send a signal to the microcontroller which uses the triode to send an audio signal to the buzzer, which converts it to sound waves. This means everytime you press a button, change the time, or an alarm goes off,beeps are played. The simple components, like resistors and capacitors, help to manage the signals and voltage of the circuit. The device is powered by two AA batteries held on a stand on the back, but it can also use a DC to USB cable using the DC port. 
+## Summary
+My starter project was a digital clock with an alarm. With the clock, you can customize the hours and minutes of the display and set alarms for specific times. The clock beeps when the user presses a button or the alarm time has come.
+### Components Used
+- Microcontroller: Coded to manage the circuit and its different components
+- Crystal: Keeps track of the time set to change the display with minutes and hours
+- Buttons: Enable the user to control the time displayed and set alarms based on different combinations of presses
+- Buzzer: Plays a beeping sound to notify the use of a change in settings or an alarm
+- Triode: Amplifies the audio and radio signals
+- Ceramic/Electrolytic Capacitors: Store and release electrical energy to control different parts of the circuit
+- Transistors - Amplify and direct electronic signals
+- Display - Shows the four digits for the time
+- AA batteries & holder: Power the circuit
+For the user to adjust the time and set and alarm, they have to use the two buttons at K1 and K2. When you press the button in a certain combination, the microcontroller runs its code based on the button input to change the digits in the display. Using the different types of At the same time, the microcontroller sends an audio signal to the buzzer, which the triode amplifies and the buzzer plays. When the user long presses K2 and saves their time settings, the crystal starts to track time. Every sixty seconds, the minute digit with change, and every 60 minutes, the hour digit will change in the display. Transistors assist in generally controlling user input and the crystal to send to the microcontroller. The capacitors help supply electrical energy towards different components like the buzzer or display based on the microcontroller and button input.
+## Challenges Faced
+Most components in the project require soldering, and being a beginner to soldering, my first attempts didn't go well. I overheated the soldering iron, soldered with too much material, and scratched the fiberglass of my first board trying to desolder. I also had a hard time distinguishing between what to solder and what to not. I learned that many of my challenges came from not cleaning the iron's tip and not being able to put conductive material on the tip.
+## Next Steps
+I have to start on my main project, the Phone-Controlled Robotic Arm. I have to build the arm, adjust the components and code, and develop/connect and app to the physical build.
 
 <!---# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
