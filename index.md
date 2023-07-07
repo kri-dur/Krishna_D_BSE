@@ -82,8 +82,7 @@ My starter project was a digital clock with an alarm. With the clock, you can cu
 - Ceramic/Electrolytic Capacitors: Store and release electrical energy to control different parts of the circuit
 - Transistors - Amplify and direct electronic signals
 - Display - Shows the four digits for the time
-- AA batteries & holder: Power the circuit
-<br>
+- AA batteries & holder: Power the circuit <br>
 For the user to adjust the time and set and alarm, they have to use the two buttons at K1 and K2. When you press the button in a certain combination, the microcontroller runs its code based on the button input to change the digits in the display. Using the different types of At the same time, the microcontroller sends an audio signal to the buzzer, which the triode amplifies and the buzzer plays. When the user long presses K2 and saves their time settings, the crystal starts to track time. Every sixty seconds, the minute digit with change, and every 60 minutes, the hour digit will change in the display. Transistors assist in generally controlling user input and the crystal to send to the microcontroller. The capacitors help supply electrical energy towards different components like the buzzer or display based on the microcontroller and button input.
 ## Challenges Faced
 Most components in the project require soldering, and being a beginner to soldering, my first attempts didn't go well. I overheated the soldering iron, soldered with too much material, and scratched the fiberglass of my first board trying to desolder. I also had a hard time distinguishing between what to solder and what to not. I learned that many of my challenges came from not cleaning the iron's tip and not being able to put conductive material on the tip.
