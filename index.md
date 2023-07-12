@@ -61,9 +61,11 @@ My intensive project is the phone-controlled robot arm. Using a wired controller
 - Turntable: Small metal balls between two plates allow it to rotate 360 degrees at the base
 - 9V battery & clip: Powers the Arduino
 - Wooden cutouts: Make up the physical parts needed for the arm; the claws, the joints, the base <br>
-When you plug the battery clip into the 9V, the robot powers up and the Arduino lights up. The user hold the wired controller and moves the thumbsticks in specific gestures to control the arm. For the left joystick, up moves the arm forward, right moves the based counter-clockwise, down moves the arm backward, and left moves the base clockwise. With Servo 1 screwed into the wooden base and turntable, it allows the rest of the components above it to move left and right with the servo movement. Servo 2 allows for forward and backward movements, since its fixed to the wooden arm. For the right joystick, up closes the claw, down expands the claw, left starts recording an action, and right peforms the recorded action. Servo 4, at the top of the arm, moves one of the claws. Geared against the other claw, both claws move in opposite directions simultaneously. Each time a joystick has input, the Arduino uses its uploaded code to match it to a function and transmit an electronic signal to the servos, which move. 
+When you plug the battery clip into the 9V, the robot powers up and the Arduino lights up. The user hold the wired controller and moves the thumbsticks in specific gestures to control the arm. For the left joystick, up moves the arm forward, right moves the based counter-clockwise, down moves the arm backward, and left moves the base clockwise. With Servo 1 screwed into the wooden base and turntable, it allows the rest of the components above it to move left and right with the servo movement. Servo 2 allows for forward and backward movements, since its fixed to the wooden arm. For the right joystick, up closes the claw, down expands the claw, left starts recording an action, and right peforms the recorded action. Servo 4, at the top of the arm, moves one of the claws. Geared against the other claw, both claws move in opposite directions simultaneously. Each time a joystick has input, the Arduino uses its uploaded code to match it to a function and transmit an electronic signal to the servos, which move.
+
 ## Challenges Faced
 The components of the project depend mostly on screws and stacked in an upward position, meaning although the initial installation is easy, fixing any past errors means disassembling multiple components below it. Another challenge I faced was initially using the servos; I realized you need to adjust servos 90 degrees before installation.
+
 ## Next Steps 
 Coding the Android app for the arm and creating custom functions for Servo 3 in the Arduino code.
 
@@ -84,8 +86,10 @@ My starter project was a digital clock with an alarm. With the clock, you can cu
 - Display - Shows the four digits for the time
 - AA batteries & holder: Power the circuit <br>
 For the user to adjust the time and set and alarm, they have to use the two buttons at K1 and K2. When you press the button in a certain combination, the microcontroller runs its code based on the button input to change the digits in the display. Using the different types of At the same time, the microcontroller sends an audio signal to the buzzer, which the triode amplifies and the buzzer plays. When the user long presses K2 and saves their time settings, the crystal starts to track time. Every sixty seconds, the minute digit with change, and every 60 minutes, the hour digit will change in the display. Transistors assist in generally controlling user input and the crystal to send to the microcontroller. The capacitors help supply electrical energy towards different components like the buzzer or display based on the microcontroller and button input.
+
 ## Challenges Faced
 Most components in the project require soldering, and being a beginner to soldering, my first attempts didn't go well. I overheated the soldering iron, soldered with too much material, and scratched the fiberglass of my first board trying to desolder. I also had a hard time distinguishing between what to solder and what to not. I learned that many of my challenges came from not cleaning the iron's tip and not being able to put conductive material on the tip.
+
 ## Next Steps
 I have to start on my main project, the Phone-Controlled Robotic Arm. I have to build the arm, adjust the components and code, and develop/connect and app to the physical build.
 
