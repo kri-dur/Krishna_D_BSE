@@ -24,21 +24,35 @@ For your final milestone, explain the outcome of your project. Key details to in
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+- What you hope to learn in the future after everything you've learned at BSE-->
 
 
 
 # Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+<!--**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**-->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
+<!--For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
 - Technical details of what you've accomplished and how they contribute to the final goal
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone-->
+
+## Summary
+My intensive project is a Phone-Controlled Robot Arm. Now, instead of using a wired controller, the user can control the robot using their phone with an app to move forward, backward, right, and left.
+
+### Components Used
+- Bluetooth Module: Sends and recieves data from other devices wirelessly
+- JST Connectors: Use a JST battery pin to connect the Arduino to two 9V batteries<br>
+With the Bluetooth Module connected to the RX and TX pins of the Arduino, devices nearby can connect and transmit messages through signals to the Arduino. The app on the phone uses slider buttons, which sends a signal in the form of the servo number and its amount of movement. The code in the Arduino reads the signal's starting servo number and moves the servo based on the following numerical value. For example, s1120 means the user slid the waist slider button and servo-1 moves to 120/180 degrees. The JST connectors replace the old wire connectors and 9V battery pin. With two 9V battery pins soldered to the JST connector, the Arduino gets the same voltage but more current to power it.
+
+## Challenges Faced
+Most challenges in this project occured with the code. The initial tutorial's code for their robot arm wouldn't work for mine due to different designs, meaning I had to adjust multiple functions and handle different libraries to fit my robot. Another challenge was cleaning the string so my signal could be read. With newline characters between some of my signals, and functions that read one character at a time, the original functions wouldn't read the app. I had to add semicolons to the end of my signals so that each different signal movement was read and updated, not on seperate lines. Another challenge I faced was the power source, but I realized that my 9V batteries didn't last very long and one battery wasn't enough current for the Arduino.
+
+## Next Steps
+For my Final Milestone, I aim to make my robot much more compact and organized and customize the app code so that my robot runs more smoothly.
 
 # First Milestone
 
