@@ -46,6 +46,7 @@ My intensive project is a Phone-Controlled Robot Arm. Now, instead of using a wi
 ### Components Used
 - Bluetooth Module: Sends and recieves data from other devices wirelessly
 - JST Connectors: Use a JST battery pin to connect the Arduino to two 9V batteries<br>
+
 With the Bluetooth Module connected to the RX and TX pins of the Arduino, devices nearby can connect and transmit messages through signals to the Arduino. The app on the phone uses slider buttons, which sends a signal in the form of the servo number and its amount of movement. The code in the Arduino reads the signal's starting servo number and moves the servo based on the following numerical value. For example, s1120 means the user slid the waist slider button and servo-1 moves to 120/180 degrees. The JST connectors replace the old wire connectors and 9V battery pin. With two 9V battery pins soldered to the JST connector, the Arduino gets the same voltage but more current to power it.
 
 ## Challenges Faced
@@ -75,6 +76,7 @@ My intensive project is the phone-controlled robot arm. Using a wired controller
 - Turntable: Small metal balls between two plates allow it to rotate 360 degrees at the base
 - 9V battery & clip: Powers the Arduino
 - Wooden cutouts: Make up the physical parts needed for the arm; the claws, the joints, the base <br>
+
 When you plug the battery clip into the 9V, the robot powers up and the Arduino lights up. The user hold the wired controller and moves the thumbsticks in specific gestures to control the arm. For the left joystick, up moves the arm forward, right moves the based counter-clockwise, down moves the arm backward, and left moves the base clockwise. With Servo 1 screwed into the wooden base and turntable, it allows the rest of the components above it to move left and right with the servo movement. Servo 2 allows for forward and backward movements, since its fixed to the wooden arm. For the right joystick, up closes the claw, down expands the claw, left starts recording an action, and right peforms the recorded action. Servo 4, at the top of the arm, moves one of the claws. Geared against the other claw, both claws move in opposite directions simultaneously. Each time a joystick has input, the Arduino uses its uploaded code to match it to a function and transmit an electronic signal to the servos, which move.
 
 ## Challenges Faced
@@ -99,6 +101,7 @@ My starter project was a digital clock with an alarm. With the clock, you can cu
 - Transistors - Amplify and direct electronic signals
 - Display - Shows the four digits for the time
 - AA batteries & holder: Power the circuit <br>
+
 For the user to adjust the time and set and alarm, they have to use the two buttons at K1 and K2. When you press the button in a certain combination, the microcontroller runs its code based on the button input to change the digits in the display. Using the different types of At the same time, the microcontroller sends an audio signal to the buzzer, which the triode amplifies and the buzzer plays. When the user long presses K2 and saves their time settings, the crystal starts to track time. Every sixty seconds, the minute digit with change, and every 60 minutes, the hour digit will change in the display. Transistors assist in generally controlling user input and the crystal to send to the microcontroller. The capacitors help supply electrical energy towards different components like the buzzer or display based on the microcontroller and button input.
 
 ## Challenges Faced
