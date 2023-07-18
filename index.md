@@ -115,7 +115,7 @@ Most components in the project require soldering, and being a beginner to solder
 ## Next Steps
 I have to start on my main project, the Phone-Controlled Robotic Arm. I have to build the arm, adjust the components and code, and develop/connect and app to the physical build.
 
-<!---# Schematics 
+# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
@@ -123,14 +123,201 @@ Here's where you'll put your code. The syntax below places it into a block of co
 
 ```c++
 void setup() {
-  // put your setup code here, to run once:
+  arm.ServoAttach(4,5,6,7);
+  arm.JoyStickAttach(A0,A1,A2,A3);
+  pinMode(buzzerPin,OUTPUT);
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  delay(20);
+  servo1PPos = 90;
+  arm.servo1.write(servo1PPos);
+  servo2PPos = 90;
+  arm.servo2.write(servo2PPos);
+  servo3PPos = 90;
+  arm.servo3.write(servo3PPos);
+  servo4PPos = 45;
+  arm.servo4.write(servo4PPos);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+   if (Serial.available() > 0) {
+  dataIn = Serial.read(); 
+  }
+    if (dataIn == 0) {
+      m = 0;
+    }
+    if (dataIn == 1) {
+      m = 1;
+    }
+    if (dataIn == 2) {
+      m = 2;
+    }
+    if (dataIn == 3) {
+      m = 3;
+    }
+    if (dataIn == 4) {
+      m = 4;
+    }
+    if (dataIn == 5) {
+      m = 5;
+    }
+    if (dataIn == 6) {
+      m = 6;
+    }
+    if (dataIn == 7) {
+      m = 7;
+    }
+    if (dataIn == 8) {
+      m = 8;
+    }
+    if (dataIn == 9) {
+      m = 9;
+    }
+    if (dataIn == 10) {
+      m = 10;
+    }
+    if (dataIn == 11) {
+      m = 11;
+    }
+    if (dataIn == 12) {
+      m = 12;
+    }
+    if (dataIn == 13) {
+      m = 13;
+    }
 
+  Serial.println(m);
+
+    while (m == 10){
+      flag = 1;
+      if (Serial.available() > 0) {
+        m = Serial.read();
+      }
+      delay(speedDelay);
+    }
+  
+  if (flag == 1){
+      while (m == 1) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo1.write(servo1PPos);
+        if (servo1PPos > 0){
+          servo1PPos--; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 2) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo1.write(servo1PPos);
+        if (servo1PPos < 180){
+          servo1PPos++; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 3) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo2.write(servo2PPos);
+        if (servo2PPos > 0){
+          servo2PPos--; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 4) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo2.write(servo2PPos);
+        if (servo2PPos < 180){
+          servo2PPos++; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 5) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo3.write(servo3PPos);
+        if (servo3PPos > 0){
+          servo3PPos--; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 6) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo3.write(servo3PPos);
+        if (servo3PPos < 180){
+          servo3PPos++; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 7) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo4.write(servo4PPos);
+        if (servo4PPos > 0){
+          servo4PPos--; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 8) {
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo4.write(servo4PPos);
+        if (servo4PPos < 90){
+          servo4PPos++; 
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 9){
+        flag = 0;
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        delay(speedDelay);
+      }
+
+      while (m == 11){
+        if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        arm.servo1.write(90);
+        arm.servo2.write(90);
+        arm.servo3.write(90);
+        arm.servo4.write(90);
+        delay(speedDelay);
+      }
+
+      while (m == 13){
+          if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        if (speedDelay > 10){
+          speedDelay--;
+        }
+      }
+
+      while (m == 12){
+          if (Serial.available() > 0) {
+          m = Serial.read();
+        }
+        if (speedDelay < 30){
+          speedDelay++;
 }
 ```
 
@@ -140,9 +327,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino Nano | Managing and controlling the robot's components | $24.90 | <a href="https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us"> Link </a> |
+| Bluetooth Module | Sending and processing signals between the app and the Arduino | $7.99 | <a href="https://www.microcenter.com/product/656628/HC-05_Bluetooth_Transmission_Module_for_Arduino_Bottom_Master_Slave"> Link </a> |
+| SG90 Servos | Moving the joints and wooden components | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
