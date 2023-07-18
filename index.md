@@ -37,7 +37,7 @@ With the original app, the signals sent between the app, the Bluetooth Module, a
 The challenges with this stage were a combination of code and my servos. Another reason my robot wasn't running smoothly was because my servos weren't calibrated properly. This resulted in Servo 4, the claw, heating up from constantly running its motors into its other claw. I had to replace Servo 4 and properly calibrate the other servos by removing them, setting their position to 90 degrees, and then attaching the components in the correct position. Another problem was the attachment of my wooden component holding Servo 2 to the base. It was attached by attaching a screw into a groove with a bolt, keeping the component in place. The groove on mine snapped, but I simply just superglued it into the base. Another problem I faced was integrating my robot with the new code. My robot was reading the values, but it wasn't giving the integer m the corresponding value. I fixed this by adding if statements in my app code for button release(with m=0) to make sure that when the button released, the value stopped.
 
 ## Next Steps
-I have to complete my Demo Night at Bluestamp, but as for my project, I'm thinking of adding a speed controller that would just increase or decrease delays in the while loops based on user input. I would also like to make the entire project more compact, maybe by stacking the Arduino under the Robot's base.
+I have to complete my Demo Night at Bluestamp. For my project, I would like to make the entire project more compact, maybe by stacking the Arduino under the Robot's base. Another idea would be to make a control not of buttons, but of a diagram of the actual robot arm that I can drag with the components.
 
 # Second Milestone
 
