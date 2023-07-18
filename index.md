@@ -10,23 +10,34 @@ Anything between these symbols will not render on the published site-->
 |:--:|:--:|:--:|:--:|
 | Krishna D. | American High | Software Engineering/Design | Rising Sophomore
 
-<!---**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
+<!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](logo.svg)
+[Headstone Image](logo.svg)-->
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
 - A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE-->
+- What you hope to learn in the future after everything you've learned at BSE
 
+## Summary
+My intensive project is the Phone-Controlled Robot Arm. For my Final Milestone, I changed and redesigned the way the app operates, allowing the robot to run smoother.
 
+### Components Used
+- SG90 Servos: Rotate 180 degrees to move and joints and claw of the arm
+- Bluetooth Module: Sends and recieves data from other devices wirelessly<br>
+
+With the original app, the signals sent between the app, the Bluetooth Module, and the Arduino were arrays from slider buttons, like "s1120". Each symbol was read by my code, and with slider buttons, many of these arrays were sent in one drag of a button. This meant that the movements were lagged and random since so much text was sent that user input was often missed. By using two up and down buttons for each servo, you can control specific values that are more fixed. The buttons now send a particular number, like "2" to the Arduino. The code then uses that to place the value into an integer m. Using while loops, m is matched to a specific servo movement, which either adds or subtracts one from the servo's position. This means when you press the up button once, the servo moves up once, and when you press the down button once, the servo moves down once. Holding the buttons down is also possible, since m stays the same since the last button was pushed. With more shorter, fixed values in place, the Arduino can read every user input easily, meaning the movements are smoother than before.
+
+## Challenges Face
+The challenges with this stage were a combination of code and my servos. Another reason my robot wasn't running smoothly was because my servos weren't calibrated properly. This resulted in Servo 4, the claw, heating up from constantly running its motors into its other claw. I had to replace Servo 4 and properly calibrate the other servos by removing them, setting their position to 90 degrees, and then attaching the components in the correct position. Another problem was the attachment of my wooden component holding Servo 2 to the base. It was attached by attaching a screw into a groove with a bolt, keeping the component in place. The groove on mine snapped, but I simply just superglued it into the base. Another problem I faced was integrating my robot with the new code. My robot was reading the values, but it wasn't giving the integer m the corresponding value. I fixed this by adding if statements in my app code for button release(with m=0) to make sure that when the button released, the value stopped.
+
+## Next Steps
+I have to complete my Demo Night at Bluestamp, but as for my project, I'm thinking of adding a speed controller that would just increase or decrease delays in the while loops based on user input. I would also like to make the entire project more compact, maybe by stacking the Arduino under the Robot's base.
 
 # Second Milestone
 
