@@ -116,7 +116,7 @@ Most components in the project require soldering, and being a beginner to solder
 I have to start on my main project, the Phone-Controlled Robotic Arm. I have to build the arm, adjust the components and code, and develop/connect and app to the physical build.
 
 # Schematics 
-<iframe width="auto" height="auto" src="Screenshot 2023-07-19 at 9.07.06 AM.png" frameborder="0"></iframe>
+<iframe width="1412" height="1217" src="Screenshot 2023-07-19 at 9.07.06 AM.png" frameborder="0"></iframe>
 
 
 # Code
