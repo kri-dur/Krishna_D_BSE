@@ -122,9 +122,9 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 # Code
 
 ## Block Code
-<center><img width="278 px" height="auto" src="Block_Code_1.png" frameborder="0"></center>
-<center><img width="auto" height="auto" src="Block_Code_2.png" frameborder="0"></center>
-<center><img width="auto" height="auto" src="Block_Code_3.png" frameborder="0"></center>
+<center><img width="278 px" height="auto" src="Block_Code_1.png" frameborder="0">
+<img width="278 px" height="auto" src="Block_Code_2.png" frameborder="0">
+<img width="278 px" height="auto" src="Block_Code_3.png" frameborder="0"></center>
 
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
