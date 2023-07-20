@@ -121,6 +121,10 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 
 
 # Code
+
+## Block Code
+<center><img width="706" height="608.5" src="Screenshot 2023-07-19 at 9.07.06 AM.png" frameborder="0"></center>
+<center><img width="706" height="608.5" src="Screenshot 2023-07-19 at 9.07.06 AM.png" frameborder="0"></center>
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
 ```c++
