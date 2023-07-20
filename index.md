@@ -119,8 +119,6 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 # Schematics 
 <center><img width="706" height="608.5" src="Screenshot 2023-07-19 at 9.07.06 AM.png" frameborder="0"></center>
 
-
-
 # Code
 
 ## Block Code
