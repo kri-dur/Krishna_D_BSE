@@ -12,8 +12,8 @@ Anything between these symbols will not render on the published site-->
 
 <!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
-![](Krishna-Project.png){height = "640 px" width = "auto"}
-![](Krishna-Headshot.png){height = "640 px" width = "auto"}
+<!--![](Krishna-Project.png){height = "640 px" width = "auto"}
+![](Krishna-Headshot.png){height = "640 px" width = "auto"}-->
 <center><img width = "640 px" width = "auto" src = "Krishna-Project.png><br>
 <img width = "640 px" width = "auto" src = "Krishna-Headshot.png></center><br>
 <!--<center><img width = 480 height = 640 src = "Krishna-Project.png")></img></center>-->
