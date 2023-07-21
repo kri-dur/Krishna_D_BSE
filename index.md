@@ -14,8 +14,6 @@ Anything between these symbols will not render on the published site-->
 
 <!--![](Krishna-Project.png){height = "640 px" width = "auto"}
 ![](Krishna-Headshot.png){height = "640 px" width = "auto"}-->
-<center><img height = "640 px" width = "auto" src = "Krishna-Project.png" frameborder = "0"><br>
-<img height = "640 px" width = "auto" src = "Krishna-Headshot.png" frameborder = "0"></center><br>
 
 ![](Krishna-Headshot.png){:width = "50%" height = "50%"}
 ![](Krishna-Project.png){:width = "50%" height = "50%"}
