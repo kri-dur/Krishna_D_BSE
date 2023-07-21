@@ -16,8 +16,8 @@ Anything between these symbols will not render on the published site-->
 
 <!--![](Krishna-Headshot.png){:height = "640" width = "auto"}
 ![](Krishna-Project.png){:height = "640" width = "auto"}-->
-<img width="480 px" height="640 px" src="Krishna-Headshot.png" frameborder="0">
-<img width="480 px" height="640 px" src="Krishna-Project.png" frameborder="0">
+<img width="420 px" height="auto" src="Krishna-Headshot.png" frameborder="0">
+<img width="420 px" height="auto" src="Krishna-Project.png" frameborder="0">
   
 # Final Milestone
 
