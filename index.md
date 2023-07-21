@@ -1,7 +1,9 @@
 # Phone-Controlled Robot Arm
-<!--Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
+Using servos at each of its joints, the robot arm can flex and grab objects around it. You can use it with two wired joysticks or just use the Android app on your phone. Although I faced challenges in integrating the app and moving the robot smoothly, after adjusting the code and app, it runs perfectly with user input.
+
+
+<!--You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 
 This is an HTML comment in Markdown 
 Anything between these symbols will not render on the published site-->
@@ -12,11 +14,8 @@ Anything between these symbols will not render on the published site-->
 
 <!--**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**-->
 
-<!--![](Krishna-Project.png){height = "640 px" width = "auto"}
-![](Krishna-Headshot.png){height = "640 px" width = "auto"}-->
-
-![](Krishna-Headshot.png){:height = "640 px" width = "auto"}
-![](Krishna-Project.png){:height = "640 px" width = "auto"}
+![](Krishna-Headshot.png){:height = "50%" width = "50%"}
+![](Krishna-Project.png){:height = "50%" width = "50%"}
 <!--<center><img width = 480 height = 640 src = "Krishna-Project.png")></img></center>-->
   
 # Final Milestone
@@ -31,6 +30,9 @@ My intensive project is the Phone-Controlled Robot Arm. For my Final Milestone, 
 - Bluetooth Module: Sends and recieves data from other devices wirelessly<br>
 
 With the original app, the signals sent between the app, the Bluetooth Module, and the Arduino were arrays from slider buttons, like "s1120". Each symbol was read by my code, and with slider buttons, many of these arrays were sent in one drag of a button. This meant that the movements were lagged and random since so much text was sent that user input was often missed. By using two up and down buttons for each servo, you can control specific values that are more fixed. The buttons now send a particular number, like "2" to the Arduino. The code then uses that to place the value into an integer m. Using while loops, m is matched to a specific servo movement, which either adds or subtracts one from the servo's position. This means when you press the up button once, the servo moves up once, and when you press the down button once, the servo moves down once. Holding the buttons down is also possible, since m stays the same since the last button was pushed. With more shorter, fixed values in place, the Arduino can read every user input easily, meaning the movements are smoother than before.
+
+## Photo
+<center><img width="50%" height="50%" src="Robot_Arm.HEIC" frameborder="0"></center>
 
 ## Challenges Faced
 The challenges with this stage were a combination of code and my servos. Another reason my robot wasn't running smoothly was because my servos weren't calibrated properly. This resulted in Servo 4, the claw, heating up from constantly running its motors into its other claw. I had to replace Servo 4 and properly calibrate the other servos by removing them, setting their position to 90 degrees, and then attaching the components in the correct position. Another problem was the attachment of my wooden component holding Servo 2 to the base. It was attached by attaching a screw into a groove with a bolt, keeping the component in place. The groove on mine snapped, but I simply just superglued it into the base. Another problem I faced was integrating my robot with the new code. My robot was reading the values, but it wasn't giving the integer m the corresponding value. I fixed this by adding if statements in my app code for button release(with m=0) to make sure that when the button released, the value stopped.
