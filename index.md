@@ -122,7 +122,7 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 # Code
 
 ## Block Code
-<center><img width="300 px" height="auto" src="Block_Code_1.png" frameborder="0"></center><br>
+<center><img width="400 px" height="auto" src="Block_Code_1.png" frameborder="0"></center><br>
 <center><img width="278 px" height="auto" src="Block_Code_2.png" frameborder="0"></center><br>
 <center><img width ="340 px" height="auto" src="Block_Code_3.png" frameborder="0"></center><br>
 
