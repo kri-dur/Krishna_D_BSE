@@ -32,7 +32,6 @@ My intensive project is the Phone-Controlled Robot Arm. For my Final Milestone, 
 
 With the original app, the signals sent between the app, the Bluetooth Module, and the Arduino were arrays from slider buttons, like "s1120". Each symbol was read by my code, and with slider buttons, many of these arrays were sent in one drag of a button. This meant that the movements were lagged and random since so much text was sent that user input was often missed. By using two up and down buttons for each servo, you can control specific values that are more fixed. The buttons now send a particular number, like "2" to the Arduino. The code then uses that to place the value into an integer m. Using while loops, m is matched to a specific servo movement, which either adds or subtracts one from the servo's position. This means when you press the up button once, the servo moves up once, and when you press the down button once, the servo moves down once. Holding the buttons down is also possible, since m stays the same since the last button was pushed. With more shorter, fixed values in place, the Arduino can read every user input easily, meaning the movements are smoother than before.
 
-## Photo
 <center><img width="50%" height="50%" src="Robot_Arm.png" frameborder="0"></center>
 
 ## Challenges Faced
@@ -136,8 +135,8 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
 
-```c++
-<pre style=”background:#fdfdfd: border:none; height:40pc”>
+
+<pre style="background:#fdfdfd; border:none; height:40pc">
 void setup() {
   arm.ServoAttach(4,5,6,7);
   arm.JoyStickAttach(A0,A1,A2,A3);
@@ -336,7 +335,6 @@ void loop() {
           speedDelay++;
 }
 </pre>
-```
 
 
 # Bill of Materials
