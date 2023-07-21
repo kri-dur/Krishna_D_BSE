@@ -16,6 +16,9 @@ Anything between these symbols will not render on the published site-->
 ![](Krishna-Headshot.png){height = "640 px" width = "auto"}-->
 <center><img height = "640 px" width = "auto" src = "Krishna-Project.png" frameborder = "0"><br>
 <img height = "640 px" width = "auto" src = "Krishna-Headshot.png" frameborder = "0"></center><br>
+
+![](Krishna-Headshot.png){:width = "50%" height = "50%"}
+![](Krishna-Project.png){:width = "50%" height = "50%"}
 <!--<center><img width = 480 height = 640 src = "Krishna-Project.png")></img></center>-->
   
 # Final Milestone
@@ -131,6 +134,7 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
+<pre style=”background:#fdfdfd: border:none; height:40pc”>
 ```c++
 void setup() {
   arm.ServoAttach(4,5,6,7);
@@ -330,6 +334,7 @@ void loop() {
           speedDelay++;
 }
 ```
+</pre>
 
 # Bill of Materials
 <!--Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
