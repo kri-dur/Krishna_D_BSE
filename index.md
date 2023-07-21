@@ -124,6 +124,8 @@ I have to start on my main project, the Phone-Controlled Robotic Arm. I have to 
 ## Block Code
 <center><img width="auto" height="auto" src="Screenshot 2023-07-21 at 9.23.28 AM.png" frameborder="0"></center><br>
 
+## C++ Code
+
 <!--Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.-->
 
 ```c++
